@@ -1,0 +1,11 @@
+            | MOV UP, ACC   | MOV UP, LEFT
+            | SUB RIGHT     |
+            | MOV ACC, DOWN |
+-------------------------------------------
+            | MOV UP, ACC   | MOV LEFT, ACC
+            | MOV ACC, RIGHT| NEG
+            | MOV ACC, DOWN | MOV ACC, DOWN
+-------------------------------------------
+            | MOV UP, DOWN  | MOV UP, DOWN
+            |               |
+            |               |
