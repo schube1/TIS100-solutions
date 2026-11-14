@@ -1,0 +1,14 @@
+MOV UP, DOWN    |                 |                 |
+---------------------------------------------------------------------
+MOV UP, DOWN    | ## BROKEN ##    | ## BROKEN ##    | ## BROKEN ##
+---------------------------------------------------------------------
+MOV UP, RIGHT   | START:          | START:          | START:
+                | MOV LEFT, ACC   | MOV LEFT, ACC   | MOV LEFT, ACC
+                | JGZ GREATER     | JEZ EQUAL       | JLZ LESS
+                | MOV 0, DOWN     | MOV 0, DOWN     | MOV 0, DOWN
+                | MOV ACC, RIGHT  | MOV ACC, RIGHT  | JMP START
+                | JMP START       | JMP START       | LESS:
+                | GREATER:        | EQUAL:          | MOV 1, DOWN
+                | MOV 1, DOWN     | MOV 1, DOWN     | JMP START
+                | MOV ACC, RIGHT  | MOV ACC, RIGHT  |
+                | JMP START       | JMP START       |
