@@ -1,0 +1,16 @@
+                  | MOV UP, RIGHT     | START:MOV UP, ACC | MOV UP, LEFT
+                  |                   | JGZ G             |
+                  |                   | JLZ L             |
+                  |                   | MOV LEFT, ACC     |
+                  |                   | ADD RIGHT         |
+                  |                   | MOV ACC, DOWN     |
+                  |                   | JMP START         |
+                  |                   | G:MOV RIGHT, DOWN |
+                  |                   |  MOV LEFT, NIL    |
+                  |                   |  JMP START        |
+                  |                   | L:MOV LEFT, DOWN  |
+                  |                   |  MOV RIGHT, NIL   |
+-----------------------------------------------------------------------------
+                  |                   | MOV UP, DOWN      |
+-----------------------------------------------------------------------------
+## BROKEN ##      |                   | MOV UP, DOWN      |
